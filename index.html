@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/kf-icoedit07.png" type="image/x-icon">
+    <title>Portfólio Kleverton Felix</title>
+    <link rel="stylesheet" href="CSS3/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Kleverton Felix</h1>
+        <p>Desenvolvedor Front-End em formação</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#grau-academico">Grau acadêmico</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou apaixonado pelo setor de tecnologia e, por isso, decidi iniciar minha jornada profissional cursando
+                Técnico em Informática. Atualmente, estou me dedicando ao aprendizado de desenvolvimento web, com foco
+                em HTML, CSS e JavaScript, buscando aprimorar minhas habilidades e construir projetos que reflitam meu
+                crescimento na área.
+            </p> </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <ul>
+                <li><a href="#calculadora">Calculadora em JavaScript</a></li>
+                <li>Site de amostra como Portfólio</li>
+            </ul> </section>
+
+        <section id="grau-academico">
+            <h2>Grau Acadêmico</h2>
+            <p>Atualmente cursando Técnico em Informática - Instituto Federal de Educação, Ciência e tecnologia Baiano - EAD</p>
+            <p>Formado em Engenharia de Pesca - Universidade Federal de Sergipe (UFS)</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nome">Seu nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Seu e-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="calculadora">
+            <h2>Calculadora embutida</h2>
+            <div class="calc-container">
+                <input type="text" id="display" disabled>
+                <div class="buttons">
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="appendValue('7')">7</button>
+                    <button onclick="appendValue('8')">8</button>
+                    <button onclick="appendValue('9')">9</button>
+                    <button onclick="appendValue('/')">/</button>
+
+                    <button onclick="appendValue('4')">4</button>
+                    <button onclick="appendValue('5')">5</button>
+                    <button onclick="appendValue('6')">6</button>
+                    <button onclick="appendValue('*')">*</button>
+
+                    <button onclick="appendValue('1')">1</button>
+                    <button onclick="appendValue('2')">2</button>
+                    <button onclick="appendValue('3')">3</button>
+                    <button onclick="appendValue('-')">-</button>
+
+                    <button onclick="appendValue('0')">0</button>
+                    <button onclick="appendValue('.')">.</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="appendValue('+')">+</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Kleverton. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
